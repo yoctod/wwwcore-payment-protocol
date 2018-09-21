@@ -1,0 +1,68 @@
+{
+  "name": "wwwcore-payment-protocol",
+  "version": "1.7.0",
+  "description": "Payment Protocol (BIP70 and related) support for bitcore",
+  "author": "BitPay <dev@bitpay.com>",
+  "main": "index.js",
+  "scripts": {
+    "lint": "gulp lint",
+    "test": "gulp test",
+    "coverage": "gulp coverage",
+    "build": "gulp",
+    "rootcerts": "node ./update-rootcerts.js"
+  },
+  "contributors": [
+    {
+      "name": "Christopher Jeffrey",
+      "email": "chjeffrey@gmail.com"
+    },
+    {
+      "name": "Manuel Araoz",
+      "email": "manuelaraoz@gmail.com"
+    },
+    {
+      "name": "Ryan X. Charles",
+      "email": "ryan@bitpay.com"
+    },
+    {
+      "name": "Linus Unnebäck",
+      "email": "linus@folkdatorn.se"
+    },
+    {
+      "name": "Esteban Ordano",
+      "email": "eordano@gmail.com"
+    },
+    {
+      "name": "Matias Alejo Garcia",
+      "email": "ematiu@gmail.com"
+    }
+  ],
+  "keywords": [
+    "bitcoin",
+    "wwwcore",
+    "payment protocol",
+    "BIP70"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoctod/wwwcore-payment-protocol.git"
+  },
+  "browser": "lib/browser.js",
+  "dependencies": {
+    "asn1.js": "=4.9.1",
+    "asn1.js-rfc3280": "=4.0.0",
+    "asn1.js-rfc5280": "=2.0.0",
+    "wwwcore-lib": "https://github.com/yoctod/wwwcore-lib.git",
+    "bs58": "^4.0.1",
+    "jsrsasign": "^8.0.4",
+    "protobufjs": "=5.0.1"
+  },
+  "devDependencies": {
+    "bitcore-build": "https://github.com/bitpay/bitcore-build.git#d4e8b2b2f1e2c065c3a807dcb6a6250f61d67ab3",
+    "brfs": "^1.2.0",
+    "chai": "~1.10.0",
+    "gulp": "^3.8.10",
+    "sinon": "^1.17.3"
+  },
+  "license": "MIT"
+}
